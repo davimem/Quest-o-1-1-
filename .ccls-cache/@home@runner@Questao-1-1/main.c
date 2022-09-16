@@ -34,9 +34,9 @@ void ImprimeMatriz(double **M, int m, int n)
   for (i=0; i<m; i++) 
   {
     for(j=0;j<n;j++)
-      {
-        printf("%.2lf ",M[i][j]);
-      }
+    {
+      printf("%.2lf ",M[i][j]);
+    }
     puts("");
   }  
 }
