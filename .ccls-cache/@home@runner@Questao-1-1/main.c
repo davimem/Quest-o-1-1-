@@ -49,7 +49,6 @@ int ComparaMatriz(double **M,double **N,int m1,int m2)
   for(i=0; i<m1; i++)
   {
     c=memcmp(M[i], N[i], m1*sizeof(*M[i]));
-    printf("%d\n",c);
     if(c!=0) return 1;
   }
   return 0;
@@ -64,7 +63,6 @@ int main (int argc, char **argv)
   M2=LeMatriz(argv[2], &m2, &n2);
   
   i=ComparaMatriz(M1, M2, m1, m2);
-  int a;//teste 
   
   if(i==0) printf("As matrizes sao iguais!\n");
   else printf("As matrizes sao diferentes!\n");
