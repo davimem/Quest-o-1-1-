@@ -64,6 +64,7 @@ int main (int argc, char **argv)
   M2=LeMatriz(argv[2], &m2, &n2);
   
   i=ComparaMatriz(M1, M2, m1, m2);
+  int a;//teste 
   
   if(i==0) printf("As matrizes sao iguais!\n");
   else printf("As matrizes sao diferentes!\n");
